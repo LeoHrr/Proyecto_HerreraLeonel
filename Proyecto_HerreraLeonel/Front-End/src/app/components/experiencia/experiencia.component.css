@@ -1,20 +1,32 @@
-.row{
-    padding: 50px;
-}
+
 .titulo{
     text-align: center;
 }
 .container{
     width: 1000px;
-    position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-bottom: 30px;
+}
+@media (max-width: 760px) {
+    .container {
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.card{
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-.container .card{
+/* .container .card{
     position: relative;
     cursor: pointer;
-}
+} */
 
 .container .card .face{
     width: 300px;

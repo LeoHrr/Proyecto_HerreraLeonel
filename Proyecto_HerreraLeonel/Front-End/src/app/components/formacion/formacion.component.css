@@ -3,15 +3,29 @@
 }
 .container{
     width: 1000px;
-    position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-bottom: 30px;
+}
+@media (max-width: 930px) {
+    .container {
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.card{
+    margin-bottom: 30px;
+    margin-right: 10px;
 }
 
-.container .card{
+/* .container .card{
     position: relative;
     cursor: pointer;
-}
+} */
 
 .container .card .face{
     width: 300px;
@@ -20,7 +34,6 @@
 }
 
 .container .card .face.face1{
-    position: relative;
     background: #333;
     display: flex;
     justify-content: center;
